@@ -1,7 +1,7 @@
 # Lab Website
 This is the lab website for the graphics group at McGill University.
 
-## Building website
+## Building the website
 
 This website is built by using [Jinja2](http://jinja.pocoo.org/docs/2.9/) templating language. To update the website, simply modify the necessary information in the `config/*.json` files and re-run `python build-website.py`. Templates used to generate the webpages can be found in `config/templates/`.
 
