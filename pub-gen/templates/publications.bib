@@ -1,0 +1,124 @@
+%
+% Define venue/journal string here and reuse in your bib entries for
+% consistency. I include a list of many of the venues I often cite below.
+% There are several reasons for doing this:
+%
+% Consistency: many online sources list the same venues slightly differently.
+%
+% History: Many journals/conferences have complicated histories. Some
+% conferences change name (e.g., the rendering workshop turning into the
+% rendering symposium), they also change the way they are published (e.g.,
+% starting in 2008 EGSR is published in the journal Computer Graphics Forum).
+%
+% Define a string eliminates the need to remember the exact cutoffs and names.
+%
+
+% EGXR citations
+% Since 2008, papers accepted at the Eurographics <Event> on Rendering are published as issue 4 of the journal Computer Graphics Forum.
+@string{cgf_egsr08  = {Computer Graphics Forum (Proceedings of the Eurographics Symposium on Rendering)}}
+% From 1995 to 2007, papers accepted at the Eurographics <Event> on Rendering were published in a book called Rendering Techniques <year>.
+@string{egsr03-07   = {Rendering Techniques (Proceedings of the Eurographics Symposium on Rendering)} }
+% The Eurographics Symposium on Rendering got its new Symposium status in 2003
+@string{egwr95-02   = {Rendering Techniques (Proceedings of the Eurographics Workshop on Rendering)} }
+% In 1994, papers accepted at the Eurographics Workshop on Rendering were published in a book called Photorealistic Rendering Techniques.
+@string{egwr94      = {Photorealistic Rendering Techniques (Proceedings of the Eurographics Workshop on Rendering}}
+% In 1992 proceedings were published in a book by Consolidation Express.
+@string{egwr92      = {Third Eurographics Workshop on Rendering}}
+% In 1991 the book was called Photorealistic Rendering in Computer Graphics, and in 1990 it was Photorealism in Computer Graphics.
+
+% various other CGF publications
+@string{cgf         = {Computer Graphics Forum}}
+@string{cgf_eg      = {Computer Graphics Forum (Proceedings of Eurographics)}}
+@string{cgf_pg      = {Computer Graphics Forum (Proceedings of Pacific Graphics)}}
+
+% SIGGRAPH proceedings
+% the first SIGGRAPH was not published in a separate journal
+@string{siggraph74       = {Annual Conference Series (Proceedings of SIGGRAPH)}}
+% SIGGRAPH between 1975 and 1992 (inclusive) were published in Computer Graphics
+@string{siggraph75-92    = {Computer Graphics (Proceedings of SIGGRAPH)}}
+% SIGGRAPH between 1993 and 2001 inclusive were not published elsewhere
+@string{siggraph93-01    = {Annual Conference Series (Proceedings of SIGGRAPH)} }
+% SIGGRAPH starting with 2002 are published in TOG
+@string{tog_siggraph02   = {{ACM} Transactions on Graphics (Proceedings of SIGGRAPH)}}
+@string{tog_siggraphasia = {{ACM} Transactions on Graphics (Proceedings of SIGGRAPH Asia)}}
+@string{tog              = {{ACM} Transactions on Graphics}}
+
+@string{gi          = {Proceedings of Graphics Interface}}
+@string{hpg         = {Proceedings of High Performance Graphics}}
+@string{vc_cgi      = {The Visual Computer (Proceedings of CGI)}}
+@string{i3d         = {Proceedings of the Symposium on Interactive 3D Graphics and Games}}
+@string{jgt         = {Journal of Graphics, GPU, and Game Tools}}
+@string{tap         = {ACM TAP}}
+@string{tvcg        = {IEEE TVCG}}
+@string{irt         = {Proceedings of IEEE Symposium on Interactive Ray Tracing}}
+@string{pg          = {Proceedings of Pacific Graphics}}
+@string{vmv         = {Proceedings of Vision, Modeling and Visualization}}
+@string{gafa        = {{GAFA} Geometric \& Functional Analysis}}
+@string{cacm        = {Communications of the ACM}}
+
+@string{ACM_COPY          = {© The Author(s) / ACM. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. The definitive Version of Record is available at <a href="http://doi.acm.org">doi.acm.org</a>.}}
+@string{EG_COPY           = {© The Author(s). This is the author's version of the work. It is posted here by permission of The Eurographics Association for your personal use. Not for redistribution. The definitive version is available at <a href="http://diglib.eg.org">diglib.eg.org</a>.}}
+
+%
+% end string defines
+%
+
+@article{chaitanya17dnn,
+    author = {Chakravarty R. Alla Chaitanya and Anton Kaplanyan and Christoph Schied and Marco Salvi and Aaron Lefohn and Derek Nowrouzezahrai and Timo Aila},
+    title = {Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder},
+    journal = tog_siggraph02,
+    year = 2017, 
+    month = aug,
+    abstract = {We describe a machine learning technique for reconstructing image sequences rendered using Monte Carlo methods. Our primary focus is on reconstruction of global illumination with extremely low sampling budgets at interactive rates. Motivated by recent advances in image restoration with deep convolutional networks, we propose a variant of these networks better suited to the class of noise present in Monte Carlo rendering. We allow for much larger pixel neighborhoods to be taken into account, while also improving execution speed by an order of magnitude. Our primary contribution is the addition of recurrent connections to the network in order to drastically improve temporal stability for sequences of sparsely sampled input images. Our method also has the desirable property of automatically modeling relationships based on auxiliary per-pixel input channels, such as depth and normals. We show signi cantly higher quality results compared to existing methods that run at comparable speeds, and furthermore argue a clear path for making our method run at realtime rates in the near future.},
+    extra-affiliation-1 = {University of Montreal},
+    extra-affiliation-2 = {McGill University},
+    extra-affiliation-3 = {NVIDIA},
+    extra-affiliation-4 = {Karlsruhe Institute of Technology},
+    extra-author-affiliation-1 = {1, 2, 3},
+    extra-author-affiliation-2 = {3},
+    extra-author-affiliation-3 = {3, 4},
+    extra-author-affiliation-4 = {3},
+    extra-author-affiliation-5 = {3},
+    extra-author-affiliation-6 = {2},
+    extra-author-affiliation-7 = {3},
+}
+
+@article{belcour17gi,
+    author = {Laurent Belcour and Ling-Qi Yan and Ravi Ramamoorthi and Derek Nowrouzezahrai},
+    title = {Antialiasing Complex Global Illumination Effects in Path-space},
+    journal = tog_siggraph02,
+    volume = 36,
+    number = 1,
+    year = 2017,
+    month = jan,
+    doi = {10.1145/2990495},
+    abstract = {We present the first method to efficiently predict antialiasing footprints to pre-filter color-, normal-, and displacement-mapped appearance in the context of multi-bounce global illumination. We derive Fourier spectra for radiance and importance functions that allow us to compute spatial-angular filtering footprints at path vertices, for both uni- and bi-directional path construction. We then use these footprints to antialias reflectance modulated by high-resolution maps (such as color and normal maps) encountered along a path. In doing so, we also unify the traditional path-space formulation of light-transport with our frequency-space interpretation of global illumination pre-filtering. Our method is fully compatible with all existing single bounce pre-filtering appearance models, not restricted by path length, and easy to implement atop existing path-space renderers. We illustrate its effectiveness on several radiometrically complex scenarios where previous approaches either completely fail or require orders of magnitude more time to arrive at similarly high-quality results.},
+    extra-affiliation-1 = {Université de Montréal},
+    extra-affiliation-2 = {UC Berkeley},
+    extra-affiliation-3 = {UC San Diego},
+    extra-affiliation-4 = {McGill University},
+    extra-author-affiliation-1 = {1},
+    extra-author-affiliation-2 = {2},
+    extra-author-affiliation-3 = {3},
+    extra-author-affiliation-4 = {4},
+}
+
+@article{blumer16reduced,
+    author = {Adrian Blumer and Jan Novák and Ralf Habel and Derek Nowrouzezahrai and Wojciech Jarosz},
+    title = {Reduced Aggregate Scattering Operators for Path Tracing},
+    journal = {Computer Graphics Forum (Proceedings of Pacific Graphics)},
+    volume = 35,
+    number = 7,
+    year = 2016,
+    month = oct,
+    doi = {10.1111/cgf.13043},
+    abstract = {We present the first method to efficiently predict antialiasing footprints to pre-filter color-, normal-, and displacement-mapped appearance in the context of multi-bounce global illumination. We derive Fourier spectra for radiance and importance functions that allow us to compute spatial-angular filtering footprints at path vertices, for both uni- and bi-directional path construction. We then use these footprints to antialias reflectance modulated by high-resolution maps (such as color and normal maps) encountered along a path. In doing so, we also unify the traditional path-space formulation of light-transport with our frequency-space interpretation of global illumination pre-filtering. Our method is fully compatible with all existing single bounce pre-filtering appearance models, not restricted by path length, and easy to implement atop existing path-space renderers. We illustrate its effectiveness on several radiometrically complex scenarios where previous approaches either completely fail or require orders of magnitude more time to arrive at similarly high-quality results.},
+    extra-affiliation-1 = {Disney Research},
+    extra-affiliation-2 = {Université de Montréal},
+    extra-affiliation-3 = {Darthmouth College},
+    extra-author-affiliation-1 = {1},
+    extra-author-affiliation-2 = {1},
+    extra-author-affiliation-3 = {1},
+    extra-author-affiliation-4 = {2},
+    extra-author-affiliation-5 = {1,3},
+}

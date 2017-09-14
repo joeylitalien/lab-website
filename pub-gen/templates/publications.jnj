@@ -1,0 +1,106 @@
+{% extends "base-template.jnj" %}
+{% block title %}Home {% endblock %}
+{% block content %}
+
+<div class="row">
+<div class="col-md-12">
+<h1 class="page-header" id="publications"><img class="icon" src="assets/icons/quill-ink.png">Publications</h1>
+</div>
+</div>
+
+<!--
+<div class="alert alert-info text-right" role="alert">
+    <strong>Total citation count: {{ total_citations }}</strong>.<br />
+    <small>Citation counts are scraped from my Google Scholar profile. Numbers are approximate.</small>
+</div>-->
+
+<!-- Tab panes -->
+<div class="content">
+    <div id="allPublications">
+
+        {% for year in years %}
+        <h2 class="page-header" id="year{{ year.year }}">{{ year.year }}</h2>
+        {% for paper in year.papers|rejectattr("type", "equalto", "patent") %}
+            <div class="row row-m-t">
+              <div class="col-lg-2">
+                {% if paper.thumbnail %}
+                  <img class="img-responsive img-thumbnail" src={{ paper.thumbnail }}>
+                {% else %}
+                  <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200">
+                {% endif %}
+              </div>
+              <div class="col-lg-10">
+                <div>
+                    {% if paper.url %}
+                    <h3 style="margin-top:8px"><a href="{% if not paper.external -%}publications/{% endif -%}{{ paper.url }}">{{ paper.title }}</a></h3>
+                    {% else %}
+                    <h3>{{ paper.title }}</h3>
+                    {% endif %}
+                </div>
+                <h4><i>{% if paper.authors %}{{ paper.authors|join(', ', attribute='name') }}{% endif %}{% if paper.editors %}{{ paper.editors|join(', ', attribute='name') }}, editors{% endif %}</i></h4>
+                <div>{{ paper.venue|replace("SIGGRAPH Asia)", "<b>SIGGRAPH Asia</b>)")|replace("SIGGRAPH)", "<b>SIGGRAPH</b>)")}}{% if paper.volume %}, {{ paper.volume }}{% if paper.number %}({{ paper.number }}){% endif %}{% if paper.pages %}:{{ paper.pages }}{% endif %}{% endif %}, {{ paper.month }}{% if paper.year %} {{ paper.year }}{% endif%}</div>
+                {% if paper.accolades %}<div>{{ paper.accolades }}</div>{% endif %}
+                <ul class="paper-external">
+                    {% if paper.external -%}
+                    <li class="external-link">
+                      <a href="{{ paper.url }}">Project webpage (external link)</a>
+                    </li>{% else -%}
+                    <li class="page">
+                      <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                      <a href="publications/{{ paper.url }}">&nbsp;Project webpage</a>
+                    </li>{% endif -%}
+                   {% for link in paper.quicklinks %}
+                     <li class="{{ link.type }}">
+                       {% if link.type == "pdf" %}
+                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                       {% elif link.type == "zip" %}
+                         <i class="fa fa-archive-o" aria-hidden="true"></i>
+                       {% elif link.type in ["key", "pptx"] %}
+                         <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                       {% elif link.type in ["mp4", "m4v", "mov", "webm"] %}
+                         <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                       {% elif link.type == "doi-link" %}
+                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                       {% else %}
+                         <i class="fa fa-file-o" aria-hidden="true"></i>
+                       {% endif %}
+                       <a href="{% if not link.external -%}publications/{% endif -%}{{ link.url }}">&nbsp;{{ link.text_short }}</a>
+                     </li>
+                   {% endfor -%}
+                </ul>
+                {% if paper.scholar_citations %}
+                <div><a href="{{ paper.scholar_citations.url }}">Citation count: {{ paper.scholar_citations.count }}</a></div>
+                {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+        {% endfor %}
+
+        <!--
+        <h3 id="patents">Patents</h3>
+        <ul>
+        {% for year in years %}
+            {% for paper in year.papers|selectattr("type", "equalto", "patent") %}
+            <li>
+                <div class="publication-title">
+                    {% if paper.url %}
+                    <a href="{{ paper.url }}">{{ paper.title }}</a>
+                    {% else %}
+                    {{ paper.title }}
+                    {% endif %}
+                </div>
+                <div>{{ paper.authors|join(', ', attribute='name') }}.</div>
+                <div><em>{{ paper.venue }}</em>{% if paper.volume and paper.number %}, {{ paper.volume }}({{ paper.number }}){% endif %}{% if paper.month %}, {{ paper.month }}{% endif %}{% if paper.year %} {{ paper.year }}{% endif%}.</div>
+                <ul>
+                    <li class="external-link"><a href="{{ paper.url }}">patent (external link)</a></li>
+{% for link in paper.quicklinks %}<li class="{{ link.type }}"><a href="{% if not link.external -%}publications/{% endif -%}{{ link.url }}">{{ link.text_short }}</a></li>{% endfor -%}
+                </ul>
+            </li>
+            {% endfor %}
+        {% endfor %}
+        </ul>
+        -->
+    </div>
+</div>
+
+{% endblock %}

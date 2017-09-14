@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 291px;
+}
+
+body {
+  font-family: 'franklin-gothic-urw', 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 50px;
+  font-size: 1.5em;
+  background-color: #fdfdfd;
+  margin-bottom: 291px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'franklin-gothic-urw', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar li a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+a {
+  color: #ef3e33;
+}
+
+a:hover {
+  color: #ad161a;
+  text-decoration: none;
+}
+
+.lab-header {
+    color: #fff;
+    height: 500px;
+    padding: 60px 0px;
+    background: url(../assets/img/iray.png) center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.lab-header h1 {
+    display: inline;
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.lab-header p.splash {
+    font-size: 1.25em;
+    margin-top: 24px;
+    padding: 12px 12px;
+    background: rgba(0,0,0,0.65);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 4px;
+}
+
+.fluid-bg {
+  background: url(img/fluid-bg.png) center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.hair {
+  background: url(img/hair-bg.png) center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.hair h1 {
+  border-bottom: none;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section {
+  padding-bottom: 40px;
+}
+
+h3.people {
+  margin-bottom: 0;
+}
+
+h3+small {
+  color: #777;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.title-icon {
+  width: 48px;
+  height: auto;
+}
+
+.faculty {
+  margin-top: 0px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.text-center {
+  margin-bottom: 24px;
+}
+
+.icon {
+  width: 48px;
+  margin-right: 10px;
+}
+
+section.even {
+  background: #eee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+section.even h1, section.even h3 {
+  border-color: #ddd;
+}
+
+.navbar-special {
+  color: #ee1e24 !important;
+}
+
+.navbar-brand .title {
+  color: #fff;
+}
+
+.navbar {
+  background-color: #000; 
+  border-bottom: none;
+}
+
+.navbar .active {
+  color: #fff !important;
+}
+
+.btn-default:hover {
+  color: #ee1e24;
+  border-color: #ee1e24;
+  background-color: rgba(255,0,0,0.1);
+}
+
+footer {
+  color: #fdfdfd;
+  padding-top: 3rem;
+  background-color: #000;
+}
+
+footer a {
+  color: #fdfdfd;
+}
+
+footer p {
+  color: #777;
+}
+
+footer img.bunny {
+  opacity: 0.3;
+  width: 100%;
+  height: auto;
+}
+
+.panel-heading h3 {
+  margin: 8px 0px 4px 0px;
+}
+
+.panel-image {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.readmore {
+  font-style: italic;
+  color: #ee1e24;
+}
+
+.page-header::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -90px; 
+  height: 90px; 
+  visibility: hidden; 
+}
+
+.row-m-t {
+  margin-bottom: 20px;
+}
+
+.paper-downloads {
+  list-style: none;
+  padding-left: 0;
+}
+
+.paper-downloads li {
+  text-decoration: none;
+.}
+
+.paper-external {
+  padding-left: 0;
+}
+
+.paper-external li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.paper-author {
+  margin: 0;
+}
+
+dl.newslist dt {
+  padding: 0.5ex 0;
+  float: left;
+}
+
+dl.newslist dd {
+  padding: 0.5ex 0;
+  margin-left: 6em;
+  border-bottom: 1px solid #eee;
+}
+
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #ef3e33;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 3px;
+}

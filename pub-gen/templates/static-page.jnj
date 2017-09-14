@@ -1,0 +1,5 @@
+{% extends "base-template.jnj" %}
+{% set subtitle = ' | Static page example' -%}
+{% block content %}
+<h2>Static page example</h2>
+{% endblock %}

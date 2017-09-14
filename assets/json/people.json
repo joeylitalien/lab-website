@@ -1,0 +1,90 @@
+[{
+  "status": "Faculty",
+  "member": [{
+    "first": "Derek",
+    "last": "Nowrouzezahrai",
+    "title": "Associate Professor",
+    "dept": "Department of Electrical & Computer Engineering",
+    "university": "McGill University",
+    "bldg": "McConnell Engineering Building",
+    "street": "3480 University Street",
+    "city": "Montreal (Quebec) H3A 0E9",
+    "phone": "(555) 555-555 ext. 555",
+    "email": "derek@cim.mcgill.ca",
+    "website": "cim.mcgill.ca/~derek",
+    "photo": "derek"
+  }]
+},
+{
+  "status": "PhD Students",
+  "member": [{
+    "first": "Chaitanya",
+    "last": "Chakravarty R. Alla",
+    "research": "Research interests",
+    "email": "first.last@graphics.mcgill.ca",
+    "website": "N/A",
+    "photo": "chaitanya"
+  },
+  {
+    "first": "Yangyang",
+    "last": "Zhao",
+    "research": "Research interests",
+    "email": "yangyang.zhao2@mail.mcgill.ca",
+    "website": "N/A",
+    "photo": "yangyang"
+  },
+  {
+    "first": "Nicolas",
+    "last": "Vibert",
+    "research": "Research interests",
+    "email": "nicolas.vibert@gmail.com",
+    "website": "N/A",
+    "photo": "nicolas"
+  }]
+},
+{
+  "status": "MSc/MEng Students",
+  "member": [{
+    "first": "Myriam",
+    "last": "Beauvais",
+    "research": "Research interests",
+    "email": "myriam.beauvais@mail.mcgill.ca",
+    "website": "N/A",
+    "photo": "myriam"
+  },
+  {
+    "first": "Sayantan",
+    "last": "Datta",
+    "research": "Research interests",
+    "email": "sayantan.datta@mail.mcgill.ca",
+    "website": "N/A",
+    "photo": "sayantan"
+  },
+  {
+    "first": "Joey",
+    "last": "Litalien",
+    "research": "Research interests",
+    "email": "joey.litalien@mail.mcgill.ca",
+    "website": "N/A",
+    "photo": "joey"
+  },
+  {
+    "first": "Keven",
+    "last": "Villeneuve",
+    "research": "Research interests",
+    "email": "keven.villeneuve@mail.mcgill.ca",
+    "website": "N/A",
+    "photo": "keven"
+  }]
+},
+{
+  "status": "Visitors & Postdocs",
+  "member": [{
+    "first": "First",
+    "last": "Last",
+    "research": "Research interests",
+    "email": "first.last@something.com",
+    "website": "N/A",
+    "photo": "visitor"
+  }]
+}]

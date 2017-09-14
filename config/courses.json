@@ -1,0 +1,28 @@
+[{
+  "code": "ECSE 689",
+  "name": "Realistic Image Synthesis",
+  "semester": "F17",
+  "instructor": "Nowrouzezahrai",
+  "webpage": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  "thumbnail": "ecse689.png"
+},
+{
+  "code": "COMP 557",
+  "name": "Fundamentals of Computer Graphics",
+  "semester": "W18",
+  "instructor": "Kry",
+  "webpage": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  "thumbnail": "comp557.png"
+},
+{
+  "code": "COMP 559",
+  "name": "Fundamentals of Computer Animation",
+  "semester": "F18",
+  "instructor": "Kry",
+  "webpage": "",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  "thumbnail": "comp559.png"
+}]
+

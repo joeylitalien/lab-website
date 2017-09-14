@@ -1,0 +1,266 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graphics &amp; Imaging Lab">
+  <meta name="author" content="GIL">
+
+  <link rel="canonical" href="http://gfx.lab.mcgill.ca">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@TheGil">
+  <meta name="twitter:title" content="GIL">
+  <meta name="twitter:description" content="Graphics &amp; Imaging Lab">
+  <meta name="twitter:image" content="/assets/touch-icon.png">
+
+  <title>GIL @ McGill | Welcome</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pace.min.js"></script>
+  <script src="https://use.typekit.net/hzc6gio.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <script>
+    $(document).on('click', 'a[href^="#"]', function(e) {
+    var id = $(this).attr('href');
+    var $id = $(id);
+    if ($id.length === 0) return;
+    e.preventDefault();
+    var pos = $id.offset().top;
+    $('body, html').animate({scrollTop: pos});
+    var tabId = id + "-tab";
+});
+  </script>
+</head>
+
+<body>
+
+  <!-- Top navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand" src="assets/img/mcgill-logo.svg"> 
+      <a class="navbar-brand" href="#"><span class="title">Graphics &amp; Imaging Lab</span></a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a id="news-tab" href="#news">News</a></li>
+          <li><a id="people-tab" href="#people">People</a></li>
+          <li><a id="courses-tab" href="#courses">Courses</a></li>
+          <li><a id="research-tab" href="#research">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="#">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lab header -->
+  <header class="lab-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Welcome to the GIL</h1>
+          <p class="splash">We design tools to bring real-world physics into interactive virtual environments. We <b>model</b> and <b>simulate</b> reality, creating realistic images and animations of cool visual phenomena. We also work on new 3D fabrication techniques to create objects that interact with their surroundings in unexpected and <b>compelling</b> ways. Our work is used in video games, special effects, architectural visualization, theme parks and high-performance scientific computing.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Lab news -->
+  <section id="lab-news" class="even"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id ="news" class="page-header"><img class="icon" src="assets/icons/teapot.png">Latest news <small><a href="news.html">Read more &raquo;</a></small></h1>
+        </div>
+      </div>
+      <div class="row">
+                <div class="col-md-4">
+          <h3>2017.10.04</h3>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+        </div>
+                <div class="col-md-4">
+          <h3>2017.10.03</h3>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+        </div>
+                <div class="col-md-4">
+          <h3>2017.10.02</h3>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+        </div>
+              </div>
+    </div>
+  </section>
+
+  <!-- Featured publication -->
+  <section id="featured-publication">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="page-header"><img class="icon" src="assets/icons/script.png">Featured publication</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-responsive" src="http://placehold.it/700x400" alt=""> 
+        </div>
+        <div class="col-md-8">
+          <h2>Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder</h2>
+          <h3><i>Chaitanya, Kaplanyan, Schied, Salvi, Lefohn, Nowrouzezahrai, Aila</i></h3>
+          <p>ACM Transactions on Graphics (Proceedings of SIGGRAPH)  &mdash; <i>Presented at SIGGRAPH 2017 (Los Angeles) </i></p>
+          <p>
+            <a href="publications/chaitanya17dnn.html">
+            <button class="btn btn-default" type="submit"><i class="fa fa-bookmark" aria-hidden="true"></i> Project webpage</button>
+            </a>
+          </p>
+        </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- Lab research -->
+  <section id="lab-research" class="even">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="page-header" id="research"><img class="icon" src="assets/icons/user.png">Research</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lab people -->
+  <section id="lab-people">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="page-header" id="people"><img class="icon" src="assets/icons/user.png">People</h1>
+        </div>
+        <!-- Faculty member -->
+        <div class="col-sm-12">
+          <h2 class="page-header">Core faculty</h2>
+        </div>
+                <div class="row">
+          <div class="col-lg-3 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/400x400" alt="">
+            <h3 class="people">Derek Nowrouzezahrai</h3>
+            <small>Associate Professor</small>
+          </div>
+        </div>
+                <!-- Graduate student -->
+        <div class="col-sm-12">
+            <h2 class="page-header">Graduate students</h2>
+        </div>
+        <div class="row">
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Chakravarty R. Alla Chaitanya</h3>
+            <small>PhD student</small>
+          </div>
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Nicolas Vibert</h3>
+            <small>PhD student</small>
+          </div>
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Yangyang Zhao</h3>
+            <small>PhD student</small>
+          </div>
+                              <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Myriam Beauvais</h3>
+            <small>MEng student</small>
+          </div>
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Sayantan Datta</h3>
+            <small>MSc student</small>
+          </div>
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Joey Litalien</h3>
+            <small>MEng student</small>
+          </div>
+                    <div class="col-lg-3 col-sm-6 text-center" style="height:300px;">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3 class="people">Keven Villeneuve</h3>
+            <small>MEng student</small>
+          </div>
+                  </div>
+        <!-- Visitors -->
+              </div>
+    </div>
+  </section>
+
+  <!-- Courses offered -->
+  <section id="courses-offered" class="even">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="page-header" id="courses"><img class="icon" src="assets/icons/pencil-ruler.png">Courses</h1>
+        </div>
+      </div>
+       <div class="row">
+                  <div class="col-md-4 portfolio-item">
+           <div class="panel panel-default">
+             <div class="panel-heading"><h3>ECSE 689: Realistic Image Synthesis <small>Nowrouzezahrai &middot; F17</small></h3></div>
+             <div class="panel-image"><img src="assets/img/ecse689.png" class="figure-img img-responsive" alt="ECSE 689"></div>
+             <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+             <div class="panel-footer"><a href=""> Course website</a></div>
+           </div>
+          </div>
+                   <div class="col-md-4 portfolio-item">
+           <div class="panel panel-default">
+             <div class="panel-heading"><h3>COMP 557: Fundamentals of Computer Graphics <small>Kry &middot; W18</small></h3></div>
+             <div class="panel-image"><img src="assets/img/comp557.png" class="figure-img img-responsive" alt="ECSE 689"></div>
+             <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+             <div class="panel-footer"><a href=""> Course website</a></div>
+           </div>
+          </div>
+                   <div class="col-md-4 portfolio-item">
+           <div class="panel panel-default">
+             <div class="panel-heading"><h3>COMP 559: Fundamentals of Computer Animation <small>Kry &middot; F18</small></h3></div>
+             <div class="panel-image"><img src="assets/img/comp559.png" class="figure-img img-responsive" alt="ECSE 689"></div>
+             <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+             <div class="panel-footer"><a href=""> Course website</a></div>
+           </div>
+          </div>
+                    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><img class="icon" src="assets/icons/location-pin.png">Contact us</h1>
+          <p><b>Graphics &amp; Imaging Lab</b><br>
+            McConnell Engineering Bldg (Rm 538)<br>
+            3480 University St<br>
+            Montreal (Quebec)<br>
+            H3A 0E9
+          </p>
+          <p><a href="http://wwww.mcgill.ca"><img src="assets/img/mcgill-logo-full.svg" style="width: 100px;"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graphics &amp; Imaging Lab">
+  <meta name="author" content="GIL">
+
+  <link rel="canonical" href="http://gfx.lab.mcgill.ca">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@TheGil">
+  <meta name="twitter:title" content="GIL">
+  <meta name="twitter:description" content="Graphics &amp; Imaging Lab">
+  <meta name="twitter:image" content="assets/touch-icon.png">
+
+  <title>GIL @ McGill | Antialiasing Complex Global Illumination Effects in Path-space</title>
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pace.min.js"></script>
+  <script src="https://use.typekit.net/hzc6gio.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand" src="../assets/img/mcgill-logo.svg"> 
+      <a class="navbar-brand" href="../index.html"><span class="title">Graphics &amp; Imaging Lab</span></a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../index.html#people">People</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a class="active" href="../publications.html">Publications</a></li>
+          <li><a href="#">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <section>
+  <div class="container">
+    <section>
+    <h1 class="page-header">Antialiasing Complex Global Illumination Effects in Path-space</h1>
+
+    <div>
+        <h3 class="paper-author">
+<a href="https://belcour.github.io/blog/">Laurent Belcour,</a>
+<small>Universit&#233; de Montr&#233;al</small>
+        </h3>
+        <h3 class="paper-author">
+Ling-Qi Yan,
+<small>UC Berkeley</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi,</a>
+<small>UC San Diego</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai,</a>
+<small>McGill University</small>
+        </h3>
+    </div>
+
+    <hr>
+    <h4>
+In <em>ACM Transactions on Graphics (Proceedings of SIGGRAPH)</em>, 2017    </h4>
+    </section>
+    
+    
+    <div>
+        <img src="../publications/images/belcour17gi-teaser.png" alt="Teaser" style="max-width: 100%; display: block; margin: auto"/>
+
+        <div>
+            
+        </div>
+    </div>
+
+    <div>
+        <h3 class="page-header">Abstract</h3>
+        <div>
+            <p class="text-justify">
+                We present the first method to efficiently predict antialiasing footprints to pre-filter color-, normal-, and displacement-mapped appearance in the context of multi-bounce global illumination. We derive Fourier spectra for radiance and importance functions that allow us to compute spatial-angular filtering footprints at path vertices, for both uni- and bi-directional path construction. We then use these footprints to antialias reflectance modulated by high-resolution maps (such as color and normal maps) encountered along a path. In doing so, we also unify the traditional path-space formulation of light-transport with our frequency-space interpretation of global illumination pre-filtering. Our method is fully compatible with all existing single bounce pre-filtering appearance models, not restricted by path length, and easy to implement atop existing path-space renderers. We illustrate its effectiveness on several radiometrically complex scenarios where previous approaches either completely fail or require orders of magnitude more time to arrive at similarly high-quality results.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="page-header">Downloads</h3>
+        <div>
+            <h4>Publication</h4>
+            <ul class="paper-downloads">
+                  <li class="pdf">
+                       <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    <a href="belcour17gi.pdf">&nbsp;Paper &middot; PDF (15MB)</a>
+                  </li>
+                  <li class="doi-link">
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    <a href="http://dx.doi.org/10.1145/2990495">&nbsp;Publisher&#8217;s official version (may require a subscription)</a>
+                  </li>
+            </ul>
+
+
+
+
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="page-header">Text Reference</h3>
+        <blockquote>
+<a href="https://belcour.github.io/blog/">Laurent Belcour</a>, Ling-Qi Yan, <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>, <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>.            Antialiasing Complex Global Illumination Effects in Path-space.
+            <em>ACM Transactions on Graphics (Proceedings of <b>SIGGRAPH</b>)</em>, 36(1), January 2017.
+        </blockquote>
+    </div>
+
+    <div>
+        <h3 class="page-header">BibTeX Reference</h3>
+        <pre>@article{belcour17gi,
+    author = "Belcour, Laurent and Yan, Ling-Qi and Ramamoorthi, Ravi and Nowrouzezahrai, Derek",
+    title = "Antialiasing Complex Global Illumination Effects in Path-space",
+    journal = "{ACM} Transactions on Graphics (Proceedings of SIGGRAPH)",
+    volume = "36",
+    number = "1",
+    year = "2017",
+    month = "January",
+    doi = "10.1145/2990495"
+}
+</pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><img class="icon" src="../assets/icons/location-pin.png">Contact us</h1>
+          <p><b>Graphics &amp; Imaging Lab</b><br>
+            McConnell Engineering Bldg (Rm 538)<br>
+            3480 University St<br>
+            Montreal (Quebec)<br>
+            H3A 0E9
+          </p>
+          <p><a href="http://wwww.mcgill.ca"><img src="../assets/img/mcgill-logo-full.svg" style="width: 100px;"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

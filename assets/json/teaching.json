@@ -1,0 +1,21 @@
+[{
+  "code": "ECSE 689",
+  "name": "Realistic Image Synthesis",
+  "semester": "Fall 2017",
+  "webpage": "Course page",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut leo dui, rhoncus vitae velit quis, pharetra scelerisque est. Integer vel viverra diam. Morbi sit amet dolor lorem."
+},
+{
+  "code": "COMP 557",
+  "name": "Fundamentals of Computer Graphics",
+  "semester": "Fall 2017",
+  "webpage": "Course page",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut leo dui, rhoncus vitae velit quis, pharetra scelerisque est. Integer vel viverra diam. Morbi sit amet dolor lorem."
+},
+{
+  "code": "COMP 559",
+  "name": "Fundamentals of Computer Animation",
+  "semester": "Winter 2018",
+  "webpage": "Course page",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ullamcorper nisl non elit hendrerit, sed maximus purus viverra. Vestibulum blandit lacinia arcu iaculis commodo. In in mauris ac nisi sodales vulputate non et nulla. Duis viverra nulla erat, et posuere enim sagittis vel. Quisque porta aliquet nisl. Vestibulum convallis metus in velit vulputate sagittis. Maecenas eleifend dapibus ex et lacinia. Nunc aliquam euismod sapien, ut luctus augue rutrum at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut leo dui, rhoncus vitae velit quis, pharetra scelerisque est. Integer vel viverra diam. Morbi sit amet dolor lorem."
+}]

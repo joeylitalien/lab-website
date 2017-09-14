@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graphics &amp; Imaging Lab">
+  <meta name="author" content="GIL">
+
+  <link rel="canonical" href="http://gfx.lab.mcgill.ca">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@TheGil">
+  <meta name="twitter:title" content="GIL">
+  <meta name="twitter:description" content="Graphics &amp; Imaging Lab">
+  <meta name="twitter:image" content="assets/touch-icon.png">
+
+  <title>GIL @ McGill | Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder</title>
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pace.min.js"></script>
+  <script src="https://use.typekit.net/hzc6gio.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand" src="../assets/img/mcgill-logo.svg"> 
+      <a class="navbar-brand" href="../index.html"><span class="title">Graphics &amp; Imaging Lab</span></a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../index.html#people">People</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a class="active" href="../publications.html">Publications</a></li>
+          <li><a href="#">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <section>
+  <div class="container">
+    <section>
+    <h1 class="page-header">Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder</h1>
+
+    <div>
+        <h3 class="paper-author">
+<a href="http://www.ece.mcgill.ca/~callac/">Chakravarty R. Alla Chaitanya,</a>
+<small>University of Montreal, McGill University, NVIDIA</small>
+        </h3>
+        <h3 class="paper-author">
+Anton Kaplanyan,
+<small>NVIDIA</small>
+        </h3>
+        <h3 class="paper-author">
+Christoph Schied,
+<small>NVIDIA, Karlsruhe Institute of Technology</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="http://research.nvidia.com/person/marco-salvi">Marco Salvi,</a>
+<small>NVIDIA</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="http://research.nvidia.com/person/aaron-lefohn">Aaron Lefohn,</a>
+<small>NVIDIA</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai,</a>
+<small>McGill University</small>
+        </h3>
+        <h3 class="paper-author">
+<a href="http://research.nvidia.com/person/timo-aila">Timo Aila,</a>
+<small>NVIDIA</small>
+        </h3>
+    </div>
+
+    <hr>
+    <h4>
+In <em>ACM Transactions on Graphics (Proceedings of SIGGRAPH)</em>, 2017    </h4>
+    </section>
+    
+    
+    <div>
+        <img src="../publications/images/chaitanya17dnn-teaser.png" alt="Teaser" style="max-width: 100%; display: block; margin: auto"/>
+
+        <div>
+            
+        </div>
+    </div>
+
+    <div>
+        <h3 class="page-header">Abstract</h3>
+        <div>
+            <p class="text-justify">
+                We describe a machine learning technique for reconstructing image sequences rendered using Monte Carlo methods. Our primary focus is on reconstruction of global illumination with extremely low sampling budgets at interactive rates. Motivated by recent advances in image restoration with deep convolutional networks, we propose a variant of these networks better suited to the class of noise present in Monte Carlo rendering. We allow for much larger pixel neighborhoods to be taken into account, while also improving execution speed by an order of magnitude. Our primary contribution is the addition of recurrent connections to the network in order to drastically improve temporal stability for sequences of sparsely sampled input images. Our method also has the desirable property of automatically modeling relationships based on auxiliary per-pixel input channels, such as depth and normals. We show signi cantly higher quality results compared to existing methods that run at comparable speeds, and furthermore argue a clear path for making our method run at realtime rates in the near future.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="page-header">Downloads</h3>
+        <div>
+            <h4>Publication</h4>
+            <ul class="paper-downloads">
+                  <li class="pdf">
+                       <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    <a href="chaitanya17dnn.pdf">&nbsp;Paper &middot; PDF (8MB)</a>
+                  </li>
+                  <li class="pdf">
+                       <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    <a href="chaitanya17dnn-supplemental.pdf">&nbsp;Supplemental document &middot; PDF (7KB)</a>
+                  </li>
+            </ul>
+
+            <h4>Slides</h4>
+            <ul class="paper-downloads">
+                  <li class="key">
+                      <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                    <a href="chaitanya17dnn-slides.key">&nbsp;Presentation slides &middot; Keynote (5B)</a>
+                  </li>
+                  <li class="pdf">
+                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    <a href="chaitanya17dnn-slides.pdf">&nbsp;Presentation slides &middot; PDF (7KB)</a>
+                  </li>
+                  <li class="pptx">
+                      <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                    <a href="chaitanya17dnn-slides.pptx">&nbsp;Presentation slides &middot; PowerPoint (0B)</a>
+                  </li>
+            </ul>
+
+            <h4>Video</h4>
+            <ul class="paper-downloads">
+                <li class="mp4">
+                    <i class="fa fa-file-video-o" aria-hidden="true"></i> 
+                  <a href="chaitanya17dnn-high.mp4">&nbsp;Video (high-quality) &middot; MP4 (0B)</a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <div>
+        <h3 class="page-header">Text Reference</h3>
+        <blockquote>
+<a href="http://www.ece.mcgill.ca/~callac/">Chakravarty R. Alla Chaitanya</a>, Anton Kaplanyan, Christoph Schied, <a href="http://research.nvidia.com/person/marco-salvi">Marco Salvi</a>, <a href="http://research.nvidia.com/person/aaron-lefohn">Aaron Lefohn</a>, <a href="http://www.cim.mcgill.ca/~derek/">Derek Nowrouzezahrai</a>, <a href="http://research.nvidia.com/person/timo-aila">Timo Aila</a>.            Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder.
+            <em>ACM Transactions on Graphics (Proceedings of <b>SIGGRAPH</b>)</em>, August 2017.
+        </blockquote>
+    </div>
+
+    <div>
+        <h3 class="page-header">BibTeX Reference</h3>
+        <pre>@article{chaitanya17dnn,
+    author = "Chaitanya, Chakravarty R. Alla and Kaplanyan, Anton and Schied, Christoph and Salvi, Marco and Lefohn, Aaron and Nowrouzezahrai, Derek and Aila, Timo",
+    title = "Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder",
+    journal = "{ACM} Transactions on Graphics (Proceedings of SIGGRAPH)",
+    year = "2017",
+    month = "August"
+}
+</pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><img class="icon" src="../assets/icons/location-pin.png">Contact us</h1>
+          <p><b>Graphics &amp; Imaging Lab</b><br>
+            McConnell Engineering Bldg (Rm 538)<br>
+            3480 University St<br>
+            Montreal (Quebec)<br>
+            H3A 0E9
+          </p>
+          <p><a href="http://wwww.mcgill.ca"><img src="../assets/img/mcgill-logo-full.svg" style="width: 100px;"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

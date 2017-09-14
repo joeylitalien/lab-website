@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Graphics &amp; Imaging Lab">
+  <meta name="author" content="GIL">
+
+  <link rel="canonical" href="http://gfx.lab.mcgill.ca">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@TheGil">
+  <meta name="twitter:title" content="GIL">
+  <meta name="twitter:description" content="Graphics &amp; Imaging Lab">
+  <meta name="twitter:image" content="assets/touch-icon.png">
+
+  <title>GIL @ McGill | {{title}}</title>
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pace.min.js"></script>
+  <script src="https://use.typekit.net/hzc6gio.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img class="navbar-brand" src="../assets/img/mcgill-logo.svg"> 
+      <a class="navbar-brand" href="../index.html"><span class="title">Graphics &amp; Imaging Lab</span></a>
+    </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../news.html">News</a></li>
+          <li><a href="../index.html#people">People</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a class="active" href="../publications.html">Publications</a></li>
+          <li><a href="#">Internal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <section>
+  <div class="container">
+    <section>
+    <h1 class="page-header">{{title}}</h1>
+
+    <div>
+        {% for author in authors %}
+        <h3 class="paper-author">
+        {% if author.url -%}
+          <a href="{{ author.url }}">{{author.name}},</a>
+        {% else -%}
+          {{author.name}},
+        {% endif -%}
+        <small>{{author.affiliation}}</small>
+        </h3>
+        {% endfor %}
+    </div>
+
+    <hr>
+    <h4>
+        {% if type == 'article' or type == 'inproceedings' -%}In {% endif -%}
+        <em>{{ venue }}</em>{% if year -%}, {{ year }}{% endif%}
+        {% if accolades %}
+        <br /><span>{{accolades}}</span>
+        {% endif %}
+    </h4>
+    </section>
+    
+    
+    {% if teaser_image %}
+    <div>
+        <img src="{{teaser_image}}" alt="Teaser" style="max-width: 100%; display: block; margin: auto"/>
+
+        <div>
+            {{caption}}
+        </div>
+    </div>
+    {% endif %}
+
+    <div>
+        <h3 class="page-header">Abstract</h3>
+        <div>
+            <p class="text-justify">
+                {{abstract}}
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="page-header">Downloads</h3>
+        <div>
+            <h4>Publication</h4>
+            {% if Paper_downloads %}
+            <ul class="paper-downloads">
+                {% for download in Paper_downloads %}
+                  <li class="{{download.type}}">
+                    {% if download.type == "pdf" %}
+                       <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    {% elif download.type == "zip" %}
+                       <i class="fa fa-file-zip-o" aria-hidden="true"></i>
+                    {% elif download.type == "doi-link" %}
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    {% endif %}
+                    <a href="{{download.url}}">&nbsp;{{download.text_long}}</a>
+                  </li>
+                {% endfor %}
+                {% for download in Extrapaper_downloads %}
+                  {{download.link}}
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if num_slides %}
+            <h4>Slides</h4>
+            <ul class="paper-downloads">
+                {% for download in Slide_downloads %}
+                  <li class="{{download.type}}">
+                    {% if download.type == "pdf" %}
+                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    {% elif download.type in ["key", "pptx"] %}
+                      <i class="fa fa-file-powerpoint-o" aria-hidden="true"></i>
+                    {% endif %}
+                    <a href="{{download.url}}">&nbsp;{{download.text_long}}</a>
+                  </li>
+                {% endfor %}
+                {% for download in Extraslide_downloads %}
+                  {{download.link}}
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if num_videos %}
+            <h4>Video</h4>
+            <ul class="paper-downloads">
+                {% for download in Video_downloads %}
+                <li class="{{download.type}}">
+                  {% if download.type in ["mp4", "m4v", "mov", "webm"] %}
+                    <i class="fa fa-file-video-o" aria-hidden="true"></i> 
+                  {% endif %}
+                  <a href="{{download.url}}">&nbsp;{{download.text_long}}</a>
+                </li>
+                {% endfor %}
+                {% for download in Youtube_downloads %}
+                <li class="{{download.type}}">
+                  {% if download.type in ["mp4", "m4v", "mov", "webm"] %}
+                    <i class="fa fa-file-video-o" aria-hidden="true"></i> 
+                  {% endif %}
+                 <a href="{{download.url}}">&nbsp;{{download.text_long}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if Data_downloads %}
+            <h4>Data</h4>
+            <ul class="paper-downloads">
+                {% for download in Data_downloads %}
+                <li class="{{download.type}}">{{download.link}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% if Code_downloads %}
+            <h4>Code</h4>
+            <ul class="paper-downloads">
+                {% for download in Code_downloads %}
+                <li class="{{download.type}}">{{download.link}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if Youtube_downloads %}
+    <div>
+        <h3 class="page-header">Video</h3>
+        <div>
+            <video controls="controls">
+                {% for download in Video_downloads %}
+                <source src="{{download.url}}" type="video/{{ {'mov': 'mp4', 'mp4': 'mp4', 'm4v': 'mp4', 'webm': 'webm'}[download.type] }}" />
+                {% endfor %}
+                <p>Your browser does not support playing this video. Please download the video below.</p>
+            </video>
+        </div>
+    </div>
+    {% endif %}
+
+    <div>
+        <h3 class="page-header">Text Reference</h3>
+        <blockquote>
+            {% for author in authors %}
+            {% if author.url -%}<a href="{{ author.url }}">{{author.name}}</a>{% else -%}{{author.name}}{% endif -%}{% if loop.last -%}.{% else -%}, {% endif -%}
+            {% endfor %}
+            {{ title }}.
+            <em>{{ venue|replace("SIGGRAPH Asia)", "<b>SIGGRAPH Asia</b>)")|replace("SIGGRAPH)", "<b>SIGGRAPH</b>)")}}</em>{% if volume %}, {{ volume }}{% if number %}({{ number }}){% endif %}{% endif %}{% if pages %}:{{ pages }}{% endif %}, {{ month }}{% if year %} {{ year }}{% endif%}.
+        </blockquote>
+    </div>
+
+    <div>
+        <h3 class="page-header">BibTeX Reference</h3>
+        <pre>{{bibcitation}}</pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><img class="icon" src="../assets/icons/location-pin.png">Contact us</h1>
+          <p><b>Graphics &amp; Imaging Lab</b><br>
+            McConnell Engineering Bldg (Rm 538)<br>
+            3480 University St<br>
+            Montreal (Quebec)<br>
+            H3A 0E9
+          </p>
+          <p><a href="http://wwww.mcgill.ca"><img src="../assets/img/mcgill-logo-full.svg" style="width: 100px;"></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+

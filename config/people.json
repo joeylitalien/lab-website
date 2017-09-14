@@ -1,0 +1,78 @@
+{
+  "faculty": [
+  {
+    "first": "Derek",
+    "last": "Nowrouzezahrai",
+    "title": "Associate Professor",
+    "dept": "Department of Electrical & Computer Engineering",
+    "university": "McGill University",
+    "bldg": "McConnell Engineering Building",
+    "street": "3480 University Street",
+    "city": "Montreal (Quebec) H3A 0E9",
+    "phone": "(555) 555-555 ext. 555",
+    "email": "derek@cim.mcgill.ca",
+    "website": "cim.mcgill.ca/~derek",
+    "photo": "derek"
+  }],
+
+  "phd": [
+   {
+    "first": "Chakravarty R. Alla",
+    "last": "Chaitanya",
+    "email": "first.last@graphics.mcgill.ca",
+    "website": "",
+    "photo": "chaitanya",
+    "title": "PhD"
+  },
+  {
+    "first": "Yangyang",
+    "last": "Zhao",
+    "email": "yangyang.zhao2@mail.mcgill.ca",
+    "website": "",
+    "photo": "yangyang",
+    "title": "PhD"
+  },
+  {
+    "first": "Nicolas",
+    "last": "Vibert",
+    "email": "nicolas.vibert@gmail.com",
+    "website": "",
+    "photo": "nicolas",
+    "title": "PhD"
+  }],
+
+  "master": [
+  {
+    "first": "Myriam",
+    "last": "Beauvais",
+    "email": "myriam.beauvais@mail.mcgill.ca",
+    "website": "",
+    "photo": "myriam",
+    "title": "MEng"
+  },
+  {
+    "first": "Sayantan",
+    "last": "Datta",
+    "email": "sayantan.datta@mail.mcgill.ca",
+    "website": "",
+    "photo": "sayantan",
+    "title": "MSc"
+  },
+  {
+    "first": "Joey",
+    "last": "Litalien",
+    "email": "joey.litalien@mail.mcgill.ca",
+    "website": "",
+    "photo": "joey",
+    "title": "MEng"
+  },
+  {
+    "first": "Keven",
+    "last": "Villeneuve",
+    "email": "keven.villeneuve@mail.mcgill.ca",
+    "website": "",
+    "photo": "keven",
+    "title": "MEng"
+  }],
+  "visitor": []
+}

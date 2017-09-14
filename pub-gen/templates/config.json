@@ -1,0 +1,75 @@
+{
+    "bib-file": "publications.bib",
+    "author-database": "author-websites.json",
+    "pub-data-directory": "../../publications/",
+    "jnj-templates-root": "./",
+    "pub-index-template": "publications",
+    "pub-pages-template": "publication",
+    "static-page-templates":
+        [
+            "static-page"
+        ],
+    "static-page-output-root": "./",
+    "pub-index-output-directory": "../../",
+    "pub-pages-output-directory": "../../publications/",
+    "regular-expressions":
+        {
+            "teaser": "-teaser\\.(jpg|jpeg|png|gif)$",
+            "thumbnail": "-thumb\\.(jpg|jpeg|png|gif)$",
+            "paper": "(|-small|-supplemental|-supplemental-small|-tech|-errata)(|[1-9]|[1][0-9]|20)\\.(pdf)$",
+            "slide": "(-slides|-fast-forward)(|[1-9]|[1][0-9]|20)\\.(pdf|key|pptx|ppt|zip|odp)$",
+            "video": "(|-high|-web|-low|-iphone|-ipad)(|[1-9]|[1][0-9]|20)\\.(mov|mp4|m4v|webm)$"
+        },
+    "paper-suffix-descriptions":
+        {
+            ""                   : {"short": "Paper", "long": "Paper"},
+            "-small"             : {"short": "Paper (low-quality)", "long": "Paper (low-quality)"},
+            "-supplemental"      : {"short": "Supplemental", "long": "Supplemental document"},
+            "-supplemental-small": {"short": "Supplemental (low-quality)", "long": "Supplemental document (low-quality)"},
+            "-tech"              : {"short": "Tech report", "long": "Tech Report"},
+            "-errata"            : {"short": "Errata", "long": "Errata"}
+        },
+    "slide-suffix-descriptions":
+        {
+            "-slides"            : {"short": "Slides", "long": "Presentation slides"},
+            "-fast-forward"      : {"short": "FF-slides", "long": "Fast forward slides"}
+        },
+    "video-suffix-descriptions":
+        {
+            ""                   : {"short": "Video", "long": "Video (full-quality)"},
+            "-high"              : {"short": "Video", "long": "Video (high-quality)"},
+            "-web"               : {"short": "Video (web-quality)", "long": "Video (web-quality)"},
+            "-low"               : {"short": "Video (low-quality)", "long": "Video (low-quality)"},
+            "-iphone"            : {"short": "Video (iPhone)", "long": "Video (iPhone)"},
+            "-ipad"              : {"short": "Video (iPad)", "long": "Video (iPad)"}
+        },
+    "extension-descriptions":
+        {
+            "pdf" : "PDF",
+        	"key" : "Keynote",
+        	"pptx": "PowerPoint",
+        	"ppt" : "PowerPoint",
+        	"zip" : "PowerPoint package",
+        	"odp" : "OpenOffice",
+            "mp4" : "MP4",
+            "m4v" : "M4V",
+            "mov" : "MOV",
+            "webm": "WEBM"
+        },
+    "author-websites":
+        {
+            "Derek Nowrouzezahrai": "http://www.cim.mcgill.ca/~derek/",
+            "Wojciech Jarosz": "https://www.cs.dartmouth.edu/~wjarosz/",
+            "Laurent Belcour": "https://belcour.github.io/blog/",
+            "Lin-Qi Yan": "http://people.eecs.berkeley.edu/~lingqi/",
+            "Ravi Ramamoorthi": "https://cseweb.ucsd.edu/~ravir/",
+            "Jan Novák": "http://drz.disneyresearch.com/~jnovak/",
+            "Benedikt Bitterli": "http://benedikt-bitterli.me",
+            "Marco Salvi": "http://research.nvidia.com/person/marco-salvi",
+            "Aaron Lefohn": "http://research.nvidia.com/person/aaron-lefohn",
+            "Timo Aila": "http://research.nvidia.com/person/timo-aila",
+            "Chakravarty R. Alla Chaitanya": "http://www.ece.mcgill.ca/~callac/",
+            "Adrian Blumer": "http://karhu.github.io/",
+            "Ralf Habel": "https://www.linkedin.com/in/ralf-habel-6a74bb2/"
+        }
+}
