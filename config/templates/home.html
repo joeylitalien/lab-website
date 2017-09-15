@@ -141,7 +141,7 @@
         {% for member in people["faculty"] | sort(attribute="last") %}
         <div class="row">
           <div class="col-lg-3 col-sm-6 text-center">
-            <img class="img-circle img-responsive img-center" src="http://placehold.it/400x400" alt="">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/300x300" alt="">
             <h3 class="people">{{member.first}} {{member.last}}</h3>
             <small>{{member.title}}</small>
           </div>
@@ -197,7 +197,7 @@
         <div class="row" style="margin-bottom:40px">
           {% for topic in topics %}
           <div class="col-md-4">
-            <img src="http://placehold.it/350x200" class="figure-img img-responsive" alt="{{topic.name}}">
+            <img src="http://placehold.it/700x400" class="figure-img img-responsive" alt="{{topic.name}}">
             <h2>{{topic.name}}</h2>
             <p>{{topic.description}}</p>
           </div>
