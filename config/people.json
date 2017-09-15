@@ -12,7 +12,7 @@
     "phone": "(555) 555-555 ext. 555",
     "email": "derek@cim.mcgill.ca",
     "website": "cim.mcgill.ca/~derek",
-    "photo": "derek"
+    "photo": "derek.png"
   }],
 
   "phd": [
@@ -21,7 +21,7 @@
     "last": "Chaitanya",
     "email": "first.last@graphics.mcgill.ca",
     "website": "",
-    "photo": "chaitanya",
+    "photo": "chaitanya.png",
     "title": "PhD"
   },
   {
@@ -29,7 +29,7 @@
     "last": "Zhao",
     "email": "yangyang.zhao2@mail.mcgill.ca",
     "website": "",
-    "photo": "yangyang",
+    "photo": "yangyang.png",
     "title": "PhD"
   },
   {
@@ -37,7 +37,7 @@
     "last": "Vibert",
     "email": "nicolas.vibert@gmail.com",
     "website": "",
-    "photo": "nicolas",
+    "photo": "nicolas.png",
     "title": "PhD"
   }],
 
@@ -47,7 +47,7 @@
     "last": "Beauvais",
     "email": "myriam.beauvais@mail.mcgill.ca",
     "website": "",
-    "photo": "myriam",
+    "photo": "myriam.png",
     "title": "MEng"
   },
   {
@@ -55,7 +55,7 @@
     "last": "Datta",
     "email": "sayantan.datta@mail.mcgill.ca",
     "website": "",
-    "photo": "sayantan",
+    "photo": "sayantan.png",
     "title": "MSc"
   },
   {
@@ -63,7 +63,7 @@
     "last": "Litalien",
     "email": "joey.litalien@mail.mcgill.ca",
     "website": "",
-    "photo": "joey",
+    "photo": "joey.png",
     "title": "MEng"
   },
   {
@@ -71,7 +71,7 @@
     "last": "Villeneuve",
     "email": "keven.villeneuve@mail.mcgill.ca",
     "website": "",
-    "photo": "keven",
+    "photo": "keven.png",
     "title": "MEng"
   }],
   "visitor": []

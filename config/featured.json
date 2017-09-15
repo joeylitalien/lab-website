@@ -1,7 +1,7 @@
 {
-  "authors": "Chaitanya, Kaplanyan, Schied, Salvi, Lefohn, Nowrouzezahrai, Aila",
+  "authors": "<b>Chaitanya</b>, Kaplanyan, Schied, Salvi, Lefohn, <b>Nowrouzezahrai</b>, Aila",
   "title": "Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder",
-  "journal": "ACM Transactions on Graphics (Proceedings of SIGGRAPH)",
+  "journal": "ACM Transactions on Graphics (Proceedings of <b>SIGGRAPH</b>)",
   "note": "Presented at SIGGRAPH 2017 (Los Angeles)",
   "webpage": "chaitanya17dnn",
   "thumbnail": ""

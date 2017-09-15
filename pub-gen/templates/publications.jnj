@@ -47,7 +47,7 @@
                     </li>{% else -%}
                     <li class="page">
                       <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-                      <a href="publications/{{ paper.url }}">&nbsp;Project webpage</a>
+                      <a href="publications/{{ paper.url }}">Project webpage</a>
                     </li>{% endif -%}
                    {% for link in paper.quicklinks %}
                      <li class="{{ link.type }}">
@@ -64,7 +64,7 @@
                        {% else %}
                          <i class="fa fa-file-o" aria-hidden="true"></i>
                        {% endif %}
-                       <a href="{% if not link.external -%}publications/{% endif -%}{{ link.url }}">&nbsp;{{ link.text_short }}</a>
+                       <a href="{% if not link.external -%}publications/{% endif -%}{{ link.url }}">{{ link.text_short }}</a>
                      </li>
                    {% endfor -%}
                 </ul>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed');
-
 html {
   position: relative;
   min-height: 100%;
@@ -9,7 +7,8 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 291px;
+  height: 340px;
+  background-image: url(../assets/img/hair-bg-bw.png);
 }
 
 body {
@@ -17,7 +16,7 @@ body {
   padding-top: 50px;
   font-size: 1.5em;
   background-color: #fdfdfd;
-  margin-bottom: 291px;
+  margin-bottom: 340px;
 }
 
 h1, h2, h3, h4 {
@@ -184,6 +183,12 @@ footer img.bunny {
   height: auto;
 }
 
+.footer-sep {
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid #333; */
+  color: #333;
+}
+
 .panel-heading h3 {
   margin: 8px 0px 4px 0px;
 }
@@ -266,4 +271,8 @@ dl.newslist dd {
   right: 100%;
   width: 100%;
   height: 3px;
+}
+
+.fa {
+  margin-right: 5px;
 }

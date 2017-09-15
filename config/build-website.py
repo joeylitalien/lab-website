@@ -16,15 +16,21 @@ def create_pages(env):
         news.sort(key=lambda x: datetime.datetime.strptime(x['date'], '%Y.%m.%d'))
     with open('featured.json') as fp:
         featured = json.load(fp)
+    with open('research.json') as fp:
+        research = json.load(fp)
     with open('courses.json') as fp:
         courses = json.load(fp)
 
     # Render home page
-    template = env.get_template('templates/home.jnj')
-    template.stream(people=people, news=news, courses=courses, featured=featured).dump('../index.html')
+    template = env.get_template('templates/home.html')
+    template.stream(people=people, 
+                    news=news,
+                    research=research,
+                    courses=courses,
+                    featured=featured).dump('../index.html')
 
     # Render news page
-    template = env.get_template('templates/news.jnj')
+    template = env.get_template('templates/news.html')
     template.stream(news=news).dump('../news.html')
 
 if __name__ == '__main__':
